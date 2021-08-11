@@ -22,6 +22,9 @@ import { FormsModule } from "@angular/forms";
 import {MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { ResponsaveisReadComponent } from './components/responsaveis/responsaveis-read/responsaveis-read.component';
+import { TarefasReadComponent } from './components/tarefas/tarefas-read/tarefas-read.component';
+import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatNativeDateModule } from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { ResponsaveisReadComponent } from './components/responsaveis/responsavei
     ResponsaveisCreateComponent,
     TarefasCrudComponent,
     TarefasCreateComponent,
-    ResponsaveisReadComponent
+    ResponsaveisReadComponent,
+    TarefasReadComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,9 @@ import { ResponsaveisReadComponent } from './components/responsaveis/responsavei
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
